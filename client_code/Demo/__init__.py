@@ -38,3 +38,6 @@ class Demo(DemoTemplate):
             self.progress += 0.01
         else:
             self.timer_1.interval = 0
+
+    def switch_1_changed(self, **event_args):
+      self.refresh_data_bindings()
